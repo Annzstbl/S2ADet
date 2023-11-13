@@ -1,0 +1,23 @@
+# CZX 无人机，搭载11波段多光谱相机
+
+
+# this is litianhao's path
+train_rgb: /data3/litianhao/datasets/DATA_20_20231026/se_information_cut/images/train/  # 128 images
+val_rgb: /data3/litianhao/datasets/DATA_20_20231026/se_information_cut/images/test/ # 128 images
+train_ir: /data3/litianhao/datasets/DATA_20_20231026/sa_information_cut/images/train/  # 128 images
+val_ir:  /data3/litianhao/datasets/DATA_20_20231026/sa_information_cut/images/test/ # 128 images
+
+
+
+# fan guo lai
+
+# train_ir: /data/multispectral-object-detection/dataset/FLIR_ADAS_1_3/rgb/images/train_rgb/  # 128 images
+# val_ir: /data/multispectral-object-detection/dataset/FLIR_ADAS_1_3/rgb/images/val_rgb/ # 128 images
+# train_rgb: /data/multispectral-object-detection/dataset/FLIR_ADAS_1_3/ir/images/train_ir/  # 128 images
+# val_rgb:  /data/multispectral-object-detection/dataset/FLIR_ADAS_1_3/ir/images/val_ir/ # 128 images
+
+# number of classes
+nc: 1
+
+# class names
+names: ['car']
