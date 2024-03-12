@@ -645,8 +645,8 @@ def parse_model_rgb_ir(d, ch):  # model_dict, input_channels(3)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--cfg', type=str, default='/home/fqy/proj/paper/YOLOFusion/models/transformer/yolov5s_fusion_transformer(x3)_vedai.yaml', help='model.yaml')
-    parser.add_argument('--device', default='0', help='cuda device, i.e. 0 or 0,1,2,3 or cpu')
+    parser.add_argument('--cfg', type=str, default='/data/users/litianhao/S2ADet/models/hsi/yolov5l_fusion_transformerx3_hsi.yaml', help='model.yaml')
+    parser.add_argument('--device', default='7', help='cuda device, i.e. 0 or 0,1,2,3 or cpu')
     opt = parser.parse_args()
     opt.cfg = check_file(opt.cfg)  # check file
     set_logging()

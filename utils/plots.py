@@ -164,7 +164,8 @@ def plot_images(images, targets, paths=None, fname='images.jpg', names=None, max
         # 输入图像的第三维度是6，这里会报错
         # mosaic[block_y:block_y + h, block_x:block_x + w, :] = img
         if img.shape[2] == 6:
-            mosaic[block_y:block_y + h, block_x:block_x + w, :] = img[:, :, :3]
+            #取后三维度
+            mosaic[block_y:block_y + h, block_x:block_x + w, :] = img[:, :, -3:]
         else:
             mosaic[block_y:block_y + h, block_x:block_x + w, :] = img
 
